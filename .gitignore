@@ -38,4 +38,4 @@ venv/
 Thumbs.db
 
 # AWS
-.aws/
+.aws/week2/
