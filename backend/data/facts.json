@@ -1,0 +1,22 @@
+{
+    "full_name": "Rom Sheynis",
+    "name": "rom",
+    "current_role": "Student",
+    "location": "Israel",
+    "email": "romsh12@gmail.com",
+    "portfolio": "https://rom812.github.io/Portfolio-Website/",
+    "linkedin": "https://www.linkedin.com/in/rom-sheynis-214bb919a/",
+    "specialties": [
+      "AI engineer",
+      "Cybersecurity engineer"
+      
+    ],
+    "years_experience": 0,
+    "education": [
+      {
+        "degree": "Information and software engineering",
+        "institution": "Ben Gurion University",
+        "year": "2026"
+      }
+    ]
+  }
