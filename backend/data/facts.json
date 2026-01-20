@@ -1,22 +1,184 @@
 {
-    "full_name": "Rom Sheynis",
-    "name": "rom",
-    "current_role": "Student",
-    "location": "Israel",
-    "email": "romsh12@gmail.com",
-    "portfolio": "https://rom812.github.io/Portfolio-Website/",
-    "linkedin": "https://www.linkedin.com/in/rom-sheynis-214bb919a/",
-    "specialties": [
-      "AI engineer",
-      "Cybersecurity engineer"
-      
-    ],
-    "years_experience": 0,
-    "education": [
-      {
-        "degree": "Information and software engineering",
-        "institution": "Ben Gurion University",
-        "year": "2026"
-      }
+  "full_name": "Rom Sheynis",
+  "name": "Rom",
+  "current_role": "BIM Automation Developer & AI Research Assistant",
+  "location": "Israel",
+  "email": "romsh12@gmail.com",
+  "portfolio": "https://rom812.github.io/Portfolio-Website/",
+  "linkedin": "https://www.linkedin.com/in/rom-sheynis-214bb919a/",
+  "gpa": "85",
+  "specialties": [
+    "System-focused Automation and Software Test Engineer",
+    "AI & LLM Engineering",
+    "Backend Development",
+    "Python & OOP"
+  ],
+  "years_experience": 1,
+  "professional_summary": "System-focused Automation and Software Test Engineer with strong foundation in Python and Object-Oriented Programming. Expertise in analyzing complex system behaviors, establishing structured evaluation criteria, and developing repeatable automated workflows to ensure system reliability.",
+  "education": [
+    {
+      "degree": "B.Sc. in Information Systems Engineering",
+      "institution": "Ben Gurion University of the Negev",
+      "start_year": "2022",
+      "end_year": "2026",
+      "gpa": "85",
+      "coursework": [
+        "Object-Oriented Programming (OOP)",
+        "Data Structures",
+        "Artificial Intelligence (AI)",
+        "Machine Learning (ML)",
+        "Cybersecurity & Network Defense"
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "id": "bim_automation_360",
+      "title": "BIM Automation Developer",
+      "organization": "360 Program, Department of Civil & Environmental Engineering",
+      "start_date": "October 2025",
+      "end_date": "Present",
+      "current": true,
+      "description": "Architecting AI-driven assistants for Revit model interaction using natural language",
+      "achievements": [
+        "Designed C# 'Semantic Wrappers' as middleware between systems and LLMs, reducing incorrect outputs by ~90%",
+        "Developed RAG pipelines with spatial reasoning for automated regulatory compliance checks",
+        "Implemented AI-based query systems for building information models"
+      ],
+      "tech_stack": ["C#", "Python", "LLMs", "RAG", "Revit API", "Spatial Reasoning"]
+    },
+    {
+      "id": "research_assistant_cbg",
+      "title": "Research Assistant (LLM & AI)",
+      "organization": "CBG Labs",
+      "start_date": "March 2025",
+      "end_date": "August 2025",
+      "current": false,
+      "description": "Designed structured protocols to evaluate LLM system robustness, consistency, and safety under adversarial conditions",
+      "achievements": [
+        "Built automated multi-agent test harnesses using Python for stress scenario validation",
+        "Developed repeatable testing workflows for systematic AI system validation",
+        "Executed automated experiments and technical analysis to guide research decisions"
+      ],
+      "tech_stack": ["Python", "Multi-Agent Systems", "LLM Testing", "Adversarial Analysis"]
+    }
+  ],
+  "military_service": {
+    "role": "Avionics Technician",
+    "organization": "Israeli Air Force, Nevatim Air Base",
+    "start_date": "2017",
+    "end_date": "2019",
+    "description": "Maintained mission-critical avionics, navigation, and communication systems",
+    "achievements": [
+      "Completed Commanders' Course",
+      "Led and trained team of avionics technicians",
+      "Ensured constant aircraft readiness through system maintenance"
     ]
+  },
+  "technical_skills": {
+    "programming_languages": {
+      "Python": 90,
+      "Java": 75,
+      "JavaScript": 75,
+      "C": 70,
+      "C++": 70,
+      "C#": 75,
+      "Bash": 80,
+      "SQL": 75
+    },
+    "backend_frameworks": {
+      "Node.js": 80,
+      "Express.js": 80,
+      "FastAPI": 85,
+      "Flask": 75
+    },
+    "ai_ml": {
+      "LangChain": 85,
+      "AutoGen": 80,
+      "Pydantic": 85,
+      "RAG Pipelines": 85,
+      "OpenAI APIs": 85,
+      "Model Context Protocol": 80,
+      "Embeddings": 80,
+      "Multi-agent Orchestration": 85,
+      "LangGraph": 85
+    },
+    "devops_cloud": {
+      "Docker": 80,
+      "Kubernetes": 70,
+      "AWS EC2": 75,
+      "AWS Lambda": 80,
+      "AWS S3": 80,
+      "AWS Bedrock": 85,
+      "Railway": 75,
+      "Terraform": 65,
+      "GitHub Actions": 75,
+      "Airflow": 65
+    },
+    "databases_apis": {
+      "PostgreSQL": 80,
+      "MySQL": 80,
+      "RESTful APIs": 90
+    },
+    "tools": {
+      "Git": 90,
+      "Linux": 85,
+      "Wireshark": 75,
+      "Postman": 85
+    },
+    "data_processing": {
+      "Pandas": 85,
+      "BeautifulSoup": 75
+    },
+    "frontend": {
+      "Vue 3": 70
+    }
+  },
+  "projects": [
+    {
+      "id": "study_pal",
+      "title": "Study Pal: AI-Driven Multi-Agent Study Assistant",
+      "description": "Intelligent learning companion utilizing LangGraph and multi-agent architecture with personalized tutoring via RAG, learning gap analysis, session planning, and automated motivational guidance",
+      "tech_stack": ["Python", "LangGraph", "RAG", "Multi-Agent Systems", "OpenAI API"],
+      "category": "AI/ML",
+      "highlights": [
+        "Multi-agent architecture for adaptive learning workflows",
+        "RAG-based personalized tutoring system",
+        "Learning gap analysis and session planning automation",
+        "Motivational guidance integration"
+      ]
+    },
+    {
+      "id": "recipe_platform",
+      "title": "Full-Stack Recipe Management Platform",
+      "description": "Comprehensive recipe management application with secure authentication, advanced search/filtering, and API integration",
+      "tech_stack": ["Vue 3", "Node.js", "Express", "PostgreSQL", "MySQL", "Docker", "Spoonacular API"],
+      "category": "Full-Stack",
+      "highlights": [
+        "Complete CRUD operations for recipe management",
+        "Spoonacular API integration for recipe data",
+        "Secure user authentication system",
+        "Dockerized backend architecture",
+        "Advanced search and filtering capabilities"
+      ]
+    },
+    {
+      "id": "digital_twin",
+      "title": "AI Digital Twin - Professional Interview Assistant",
+      "description": "AI-powered digital twin for professional representation on portfolio website, featuring conversational AI with visual context panels",
+      "tech_stack": ["Next.js", "FastAPI", "AWS Bedrock", "TypeScript", "Python", "AWS Lambda"],
+      "category": "AI/Full-Stack",
+      "highlights": [
+        "AWS Bedrock integration for LLM conversations",
+        "Interactive timeline and skill visualizations",
+        "Serverless deployment on AWS",
+        "Session-based conversation memory"
+      ]
+    }
+  ],
+  "languages": {
+    "Hebrew": "Native",
+    "English": "Highly Proficient",
+    "Russian": "Conversational"
   }
+}

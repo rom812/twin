@@ -1,8 +1,83 @@
-You are a chatbot acting as a "Digital Twin", representing  on Roms's website,
-and engaging with visitors to the website.
+Rom Sheynis is a system-focused Automation and Software Test Engineer with a strong foundation in Python and Object-Oriented Programming (OOP). He is currently pursuing a B.Sc. in Information Systems Engineering at Ben Gurion University of the Negev (2022-2026), maintaining an impressive GPA of 85.
 
-Your goal is to answer questions acting as [Your Name], to the best of your knowledge based on the 
-provided context.
+CURRENT ROLES
 
-Roms Sheynis is a AI engineer. He studied information and software engineering in ben gurion and.
-He was a research asistant in a research of adverserial behaviour among LLMS in a multi agent enviorment.
+Rom currently holds two professional positions:
+
+1. BIM Automation Developer at the 360 Program (Department of Civil & Environmental Engineering) - October 2025 to Present
+   - Architecting AI-driven assistants that enable natural language queries of Revit building models
+   - Developed C# "Semantic Wrappers" serving as middleware between systems and LLMs, achieving a remarkable ~90% reduction in incorrect or non-compliant outputs
+   - Building RAG (Retrieval-Augmented Generation) pipelines combined with spatial reasoning logic to automate regulatory compliance checks within building information models
+   - Technologies: C#, Python, LLMs, RAG, Revit API, Spatial Reasoning
+
+2. Research Assistant (LLM & AI) at CBG Labs - March 2025 to August 2025
+   - Designed structured evaluation protocols to assess LLM system robustness, consistency, and safety under adversarial conditions
+   - Built automated multi-agent test harnesses using Python to validate complex system behaviors during stress scenarios and edge-case testing
+   - Developed repeatable testing workflows and detailed analysis outputs to support systematic validation and comparison of AI systems
+   - Executed automated experiments and summarized technical results to guide engineering and research decision-making
+   - Technologies: Python, Multi-Agent Systems, LLM Testing, Adversarial Analysis
+
+TECHNICAL EXPERTISE
+
+Rom's technical skill set spans multiple domains:
+
+Programming Languages: Highly proficient in Python (primary language), with strong capabilities in Java, JavaScript, C, C++, C#, Bash, and SQL
+
+Backend Development: Expert-level experience with Node.js, Express.js, FastAPI, and Flask. Skilled in designing and implementing RESTful APIs, working with PostgreSQL and MySQL databases
+
+AI & Machine Learning Engineering: Specialized in modern AI frameworks including LangChain, AutoGen, Pydantic, and LangGraph. Deep expertise in RAG pipelines, OpenAI APIs, Model Context Protocol (MCP), embeddings, and multi-agent orchestration
+
+DevOps & Cloud Infrastructure: Proficient with Docker, Kubernetes, and comprehensive AWS services (EC2, Lambda, S3, Bedrock). Experience with Railway, Terraform, GitHub Actions, and Airflow for workflow automation
+
+System Analysis & Testing: Expert in protocol-level troubleshooting using Linux and Wireshark. Extensive experience with Git, Postman, and various software design patterns
+
+Data Processing: Strong capabilities with Pandas and BeautifulSoup for data manipulation and web scraping
+
+Frontend Development: Working knowledge of Vue 3 for building modern web interfaces
+
+NOTABLE PROJECTS
+
+Study Pal: AI-Driven Multi-Agent Study Assistant
+Developed an intelligent learning companion utilizing LangGraph and a sophisticated multi-agent architecture. Features include personalized tutoring via RAG, learning gap analysis, automated session planning, and motivational guidance within an adaptive workflow. This project demonstrates Rom's ability to orchestrate complex AI systems that adapt to user needs.
+
+Full-Stack Recipe Management Platform
+Built a comprehensive recipe management application using Vue 3, Node.js/Express, and PostgreSQL/MySQL. Integrated the Spoonacular API for recipe data, implemented secure authentication, advanced search and filtering capabilities, and deployed a fully Dockerized backend. This project showcases full-stack development skills from frontend UI to backend infrastructure.
+
+AI Digital Twin - Professional Interview Assistant
+Created an AI-powered digital twin for professional representation, featuring conversational AI with visual context panels. Built with Next.js, FastAPI, and AWS Bedrock, deployed serverlessly on AWS Lambda. Implements session-based conversation memory and interactive visualizations. This very project demonstrates Rom's expertise in modern AI deployment and cloud architecture.
+
+MILITARY SERVICE
+
+Avionics Technician, Israeli Air Force, Nevatim Air Base (2017-2019)
+- Maintained mission-critical avionics, navigation, and communication systems to ensure constant aircraft readiness
+- Completed the Commanders' Course and subsequently led and trained a team of avionics technicians
+- Developed strong systems thinking, attention to detail, and leadership capabilities
+
+ACADEMIC BACKGROUND
+
+B.Sc. in Information Systems Engineering at Ben Gurion University of the Negev
+- GPA: 85
+- Key Coursework: Object-Oriented Programming (OOP), Data Structures, Artificial Intelligence (AI), Machine Learning (ML), Cybersecurity & Network Defense
+- Expected Graduation: 2026
+
+PROFESSIONAL STRENGTHS
+
+Rom's expertise lies in analyzing complex system behaviors, establishing structured evaluation criteria, and developing repeatable automated workflows to ensure system reliability and address edge cases. He excels at protocol-level troubleshooting and has practical experience spanning backend services, APIs, and core infrastructure.
+
+His work with AI systems demonstrates a unique combination of theoretical understanding and practical implementation skills. The ability to reduce LLM output errors by 90% through semantic wrapper design showcases his systematic approach to solving real-world AI reliability challenges.
+
+LANGUAGES
+
+- Hebrew: Native speaker
+- English: Highly proficient (professional working proficiency)
+- Russian: Conversational
+
+CAREER INTERESTS
+
+Rom is particularly interested in roles that combine his strengths in AI/ML engineering, system reliability, and backend development. He is passionate about building robust, production-grade AI systems and is actively seeking opportunities where he can apply his skills in automated testing, multi-agent systems, and AI-driven automation.
+
+His unique combination of military service discipline, academic excellence, hands-on research experience, and practical development skills makes him a strong candidate for positions in AI engineering, software development, and technical consulting roles.
+
+Contact: romsh12@gmail.com
+Portfolio: https://rom812.github.io/Portfolio-Website/
+LinkedIn: https://www.linkedin.com/in/rom-sheynis-214bb919a/
