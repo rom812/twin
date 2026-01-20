@@ -58,6 +58,7 @@ class ChatRequest(BaseModel):
 class ChatResponse(BaseModel):
     response: str
     session_id: str
+    ui_action: Optional[Dict] = None
 
 
 class Message(BaseModel):
@@ -107,7 +108,7 @@ def save_conversation(session_id: str, messages: List[Dict]):
             json.dump(messages, f, indent=2)
 
 
-def call_bedrock(conversation: List[Dict], user_message: str) -> str:
+def call_bedrock(conversation: List[Dict], user_message: str) -> tuple[str, Optional[Dict]]:
     """Call AWS Bedrock with conversation history"""
     
     # Build messages in Bedrock format
@@ -145,7 +146,25 @@ def call_bedrock(conversation: List[Dict], user_message: str) -> str:
         )
         
         # Extract the response text
-        return response["output"]["message"]["content"][0]["text"]
+        full_text = response["output"]["message"]["content"][0]["text"]
+        
+        # Parse potential UI/Visual actions
+        # Look for ```ui_action { ... } ``` pattern
+        import re
+        ui_action = None
+        action_pattern = r"```ui_action\s*({.+?})\s*```"
+        match = re.search(action_pattern, full_text, re.DOTALL)
+        
+        if match:
+            try:
+                action_json = match.group(1)
+                ui_action = json.loads(action_json)
+                # Remove the action block from the spoken text so the user doesn't see raw JSON
+                full_text = re.sub(action_pattern, "", full_text).strip()
+            except json.JSONDecodeError:
+                print("Failed to decode UI action JSON")
+
+        return full_text, ui_action
         
     except ClientError as e:
         error_code = e.response['Error']['Code']
@@ -190,12 +209,15 @@ async def chat(request: ChatRequest):
         conversation = load_conversation(session_id)
 
         # Call Bedrock for response
-        assistant_response = call_bedrock(conversation, request.message)
+        assistant_response, ui_action = call_bedrock(conversation, request.message)
 
         # Update conversation history
         conversation.append(
             {"role": "user", "content": request.message, "timestamp": datetime.now().isoformat()}
         )
+        # Store just the text response in history to keep it clean, 
+        # or we could store the action too if we want state persistence.
+        # For now, just text.
         conversation.append(
             {
                 "role": "assistant",
@@ -207,7 +229,7 @@ async def chat(request: ChatRequest):
         # Save conversation
         save_conversation(session_id, conversation)
 
-        return ChatResponse(response=assistant_response, session_id=session_id)
+        return ChatResponse(response=assistant_response, session_id=session_id, ui_action=ui_action)
 
     except HTTPException:
         raise
