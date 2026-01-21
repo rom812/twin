@@ -118,7 +118,7 @@ export default function Twin() {
     return (
         <div className="flex h-[800px] w-full bg-white rounded-2xl shadow-2xl overflow-hidden border border-slate-200">
             {/* Left Panel: Chat Interface */}
-            <div className="flex flex-col w-1/2 border-r border-slate-200 bg-gray-50">
+            <div className="flex flex-col w-full lg:w-2/3 border-r border-slate-200 bg-gray-50">
                 {/* Header */}
                 <div className="bg-white border-b border-slate-100 p-4">
                     <h2 className="text-lg font-bold text-slate-800 flex items-center gap-2">
@@ -146,7 +146,7 @@ export default function Twin() {
                                 </div>
                             )}
                             <h3 className="text-lg font-semibold text-gray-800">Hi, I'm the Digital Twin.</h3>
-                            <p className="text-sm mt-2 max-w-xs mx-auto">Ask me about my experience, skills, or projects to see the magic happen!</p>
+                            <p className="text-base mt-2 max-w-md mx-auto">Ask me about my experience, skills, or projects to see the magic happen!</p>
                         </div>
                     )}
 
@@ -174,11 +174,11 @@ export default function Twin() {
 
                             <div
                                 className={`max-w-[85%] rounded-2xl p-4 shadow-sm ${message.role === 'user'
-                                        ? 'bg-slate-800 text-white rounded-tr-sm'
-                                        : 'bg-white border border-slate-100 text-slate-700 rounded-tl-sm'
+                                    ? 'bg-slate-800 text-white rounded-tr-sm'
+                                    : 'bg-white border border-slate-100 text-slate-700 rounded-tl-sm'
                                     }`}
                             >
-                                <p className="whitespace-pre-wrap leading-relaxed">{message.content}</p>
+                                <p className="whitespace-pre-wrap leading-relaxed text-base">{message.content}</p>
                             </div>
                         </div>
                     ))}
@@ -218,16 +218,16 @@ export default function Twin() {
                         <button
                             onClick={sendMessage}
                             disabled={!input.trim() || isLoading}
-                            className="absolute right-2 top-2 p-1.5 bg-blue-600 text-white rounded-lg hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+                            className="absolute right-2 top-2 p-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
                         >
-                            <Send className="w-4 h-4" />
+                            <Send className="w-5 h-5" />
                         </button>
                     </div>
                 </div>
             </div>
 
             {/* Right Panel: Visual Context */}
-            <div className="w-1/2 bg-slate-50 relative overflow-hidden">
+            <div className="hidden lg:block lg:w-1/3 bg-slate-50 relative overflow-hidden">
                 <div className="absolute inset-0 p-6 overflow-y-auto">
                     <VisualPanel action={uiAction} />
                 </div>

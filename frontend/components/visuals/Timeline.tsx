@@ -8,35 +8,35 @@ interface TimelineItem {
     description: string;
 }
 
-// Hardcoded data for now, ideally this comes from backend or props
+// Real career history for Rom Sheynis
 const careerHistory: TimelineItem[] = [
     {
-        id: "senior_ai_engineer_google",
-        date: "2024 - Present",
-        title: "Senior AI Engineer",
-        company: "Google",
-        description: "Leading multi-agent system architecture."
+        id: "bim_automation_360",
+        date: "Oct 2025 - Present",
+        title: "BIM Automation Developer",
+        company: "360 Program, BGU",
+        description: "AI-driven assistants for Revit models. Designed C# semantic wrappers reducing LLM errors by 90%."
     },
     {
-        id: "ai_researcher_deepmind",
-        date: "2021 - 2024",
-        title: "AI Researcher",
-        company: "DeepMind",
-        description: "Focused on LLM alignment and safety."
-    },
-    {
-        id: "software_engineer_microsoft",
-        date: "2019 - 2021",
-        title: "Software Engineer",
-        company: "Microsoft",
-        description: "Built scalable cloud services on Azure."
+        id: "research_assistant_cbg",
+        date: "Mar 2025 - Aug 2025",
+        title: "Research Assistant (LLM & AI)",
+        company: "CBG Labs",
+        description: "Evaluated LLM robustness under adversarial conditions. Built multi-agent test harnesses."
     },
     {
         id: "education_bgu",
-        date: "2015 - 2019",
-        title: "B.Sc Software Engineering",
+        date: "2022 - 2026",
+        title: "B.Sc. Information Systems Engineering",
         company: "Ben Gurion University",
-        description: "Specialized in Intelligent Systems."
+        description: "GPA 85. Focus on AI, ML, and Cybersecurity. Expected graduation 2026."
+    },
+    {
+        id: "military_iaf",
+        date: "2017 - 2019",
+        title: "Avionics Technician",
+        company: "Israeli Air Force",
+        description: "Maintained mission-critical avionics. Completed Commanders' Course and led technician team."
     }
 ];
 
@@ -52,7 +52,7 @@ export default function Timeline({ highlightId }: TimelineProps) {
                 {careerHistory.map((item) => {
                     const isHighlighted = highlightId && item.id.includes(highlightId);
                     return (
-                        <div key={item.id} className={`mb-8 ml-6 relative transition-all duration-500 ${isHighlighted ? 'scale-105' : 'opacity-70 grayscale'}`}>
+                        <div key={item.id} className={`mb-8 ml-6 relative transition-all duration-500 ${isHighlighted ? 'scale-105' : 'opacity-100'}`}>
                             <span className={`absolute -left-[33px] flex h-6 w-6 items-center justify-center rounded-full ring-4 ring-white ${isHighlighted ? 'bg-blue-500' : 'bg-slate-200'}`}>
                                 {isHighlighted && <div className="w-2 h-2 bg-white rounded-full animate-ping" />}
                             </span>
